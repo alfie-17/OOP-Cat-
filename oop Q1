@@ -1,0 +1,16 @@
+Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+    ' Declare integer variables
+    Dim num1, num2, sum, difference, product As Integer
+
+    ' Conversion, computation, and display handled within error block (see part d)
+    num1 = CInt(txtNum1.Text)
+    num2 = CInt(txtNum2.Text)
+
+    ' Compute values
+    sum = num1 + num2
+    difference = num1 - num2
+    product = num1 * num2
+
+    ' Display results
+    lblResult.Text = $"Sum = {sum}{Environment.NewLine}Difference = {difference}{Environment.NewLine}Product = {product}"
+End Sub
